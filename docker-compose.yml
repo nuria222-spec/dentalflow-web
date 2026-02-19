@@ -1,7 +1,6 @@
 services:
   web:
     image: nginx:alpine
-    ports:
-      - "80:80"
+    container_name: dentalflow_web
     volumes:
-      - .:/usr/share/nginx/html:ro
+      - ./:/usr/share/nginx/html
