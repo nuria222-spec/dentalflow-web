@@ -1,6 +1,6 @@
 services:
   web:
     image: nginx:alpine
-    container_name: dentalflow_web
     volumes:
-      - ./:/usr/share/nginx/html
+      - .:/usr/share/nginx/html
+
