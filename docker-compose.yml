@@ -1,7 +1,7 @@
 services:
-  web:
+  dentalflow-web:
     image: nginx:alpine
+    expose:
+      - "80"
     volumes:
       - ./:/usr/share/nginx/html:ro
-
-
