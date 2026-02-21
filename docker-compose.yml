@@ -1,7 +1,7 @@
 services:
   dentalflow-web:
     image: nginx:alpine
-    expose:
-      - "80"
+    ports:
+      - "8080:80"
     volumes:
       - ./:/usr/share/nginx/html:ro
